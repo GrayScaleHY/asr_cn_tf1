@@ -1,0 +1,18 @@
+data:
+  data_type: train
+  # 训练语言模型的数据，结构为： pinyin 汉字
+  data_path: data/
+  dev_path: data/
+  batch_size: 5
+  # 训练数据的大小，当val为False时训练数据为上面整个数据集。
+  data_length: False
+  am_vocab_file: False
+model:
+  vocab_size: False
+  lr: 0.0008
+  is_training: True
+  gpu_nums: 1
+train:
+  epochs: 5
+  retrain_dir: False
+  save_path: logs_am
